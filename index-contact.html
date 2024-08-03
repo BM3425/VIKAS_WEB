@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Vikas TVLA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles-contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container navbar__container">
+            <a href="index-landing.html" id="navbar__logo">Vikas School</a>
+            <!-- Mobile menu toggle button -->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <!-- Navigation menu items -->
+            <ul class="navbar__menu">
+                <li class="navbar__item"><a href="index-about.html" class="navbar__links">About</a></li>
+                <li class="navbar__item"><a href="index-service.html" class="navbar__links">Services</a></li>
+                <li class="navbar__item"><a href="index-partner.html" class="navbar__links">Partner With Us</a></li>
+                <li class="navbar__item"><a href="index-contact.html" class="navbar__links">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <header class="hero">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p class="subtitle">We'd love to hear from you. Get in touch with us for any inquiries or feedback.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="contact-content">
+            <div class="contact-form">
+                <h2>Send us a message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <p>Elavinal, Kunnamthanam, Thiruvalla - 68958</p>
+                <p>Phone: 9496038600</p>
+                <p>Email: info@vikasschool.com</p>
+                <p>Monday - Friday: 10am - 3pm<br>Saturday - Sunday: Closed</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Vikas School. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script-contact.js"></script>
+</body>
+</html>
