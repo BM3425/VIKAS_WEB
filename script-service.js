@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const navbarMenu = document.querySelector('.navbar__menu');
 
   mobileMenu.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
+    mobileMenu.classList.toggle('is-active');
     navbarMenu.classList.toggle('active');
   });
 });
