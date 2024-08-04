@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const mobileMenu = document.querySelector('#mobile-menu');
+  const mobileMenu = document.querySelector('#navbar-toggle');
   const navbarMenu = document.querySelector('.navbar__menu');
   const dropdownItems = document.querySelectorAll('.navbar__item');
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const dropdown = this.querySelector('.navbar-dropdown');
         if (dropdown) {
           e.preventDefault();
-          this.classList.toggle('active');
+          dropdown.classList.toggle('active');
         }
       }
     });
@@ -24,7 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (window.innerWidth > 960) {
       navbarMenu.classList.remove('active');
       mobileMenu.classList.remove('is-active');
-      dropdownItems.forEach(item => item.classList.remove('active'));
+      dropdownItems.forEach(item => {
+        const dropdown = item.querySelector('.navbar-dropdown');
+        if (dropdown) {
+          dropdown.classList.remove('active');
+        }
+      });
     }
   });
 });
