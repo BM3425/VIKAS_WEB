@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const menu = document.querySelector('#mobile-menu');
+  const menu = document.querySelector('#navbar-toggle');
   const menuLinks = document.querySelector('.navbar__menu');
 
   menu.addEventListener('click', function() {
